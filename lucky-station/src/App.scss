@@ -1,9 +1,10 @@
-$h2Lucky: blue;
-.App {
-  text-align: center;
-}
-.App h2 {
-  background-color: $h2Lucky;
+$bg-primary: #00B8A9;
+
+
+.containerFluid {
+    background-color: $bg-primary;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 
