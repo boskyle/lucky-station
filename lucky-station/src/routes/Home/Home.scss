@@ -1,32 +1,24 @@
-// variables for different devices width and height
-$small-devices-bp: 375px;
+//default styles
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
 
-.home-item{
-    display: flex;
-    flex-flow: column wrap;
+h1,h2,h3 {
+    padding: 1em 0em;
+}
+
+#introduction .content-wrap {
+    padding: 0 1.5em;
+}
+// variables
+$color-primary: #f8f3d4;
+
+
+// section A
+#section-a {
+    background-color: $color-primary;
 }
 
 
-
-// p and img container
-.home-item:nth-child(1) {
-    // mobile first design
-    border: 1px solid black;
-    padding:3em;
-    text-align:center;
-    overflow: auto;
-    p {
-            font-size:1.75em;
-    }
-
-    img{
-        max-height: 100%;
-        max-width:100%;
-        display: block; /* remove extra space below image */
-    }
-
-    @media (min-width: 375px) {
-        text-align:left;
-        padding: 2em;
-    }
-}
