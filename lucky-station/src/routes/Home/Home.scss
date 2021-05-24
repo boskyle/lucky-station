@@ -1,3 +1,15 @@
+// variables
+$color-primary: #f8f3d4;
+
+// breakpoints (scss style)
+
+@mixin medium-screen {
+    @media only screen and (min-width: 700px) {
+        @content;
+    }
+}
+
+
 //default styles
 img {
     display: block;
@@ -10,15 +22,33 @@ h1,h2,h3 {
 }
 
 #introduction .content-wrap {
-    padding: 0 1.5em;
+    padding: 0 2em;
+    // become grid at this custom defined breakpoint
 }
-// variables
-$color-primary: #f8f3d4;
 
 
+ 
 // section A
 #section-a {
     background-color: $color-primary;
 }
+
+
+// breakpoint smaller screen
+@include medium-screen {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2,auto) 1fr;
+    }
+    #introduction > .content-wrap {
+        grid-column: 1/4;
+        font-size: 1.5em;
+        text-align: left;
+    }
+    img {
+        padding: 1em;
+    }
+}
+
 
 

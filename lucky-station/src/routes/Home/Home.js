@@ -11,10 +11,10 @@ const Home = () => {
             <p>     My name is Lucky. My fur is as white as this paragraph. 
                     Welcome to my website station,
                     this is where my owner will post pictures of myself and my friends, 
-                    aswell as caption them :D.
+                    aswell as caption them.
             </p>
             </div>
-        <img src= {luckyImg}></img>
+            <img src={luckyImg}></img>
         </header>
         
         <main id="main">
