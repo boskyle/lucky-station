@@ -4,11 +4,11 @@ import luckyImg from '../../assets/images/Home/lucky_no_bg.png';
 
 const Home = () => {
     return (
+        // fragment
         <>
         <header id="introduction" className="grid">
             <div className="content-wrap">
-            <h1 lassName="content-title">Welcome to my station</h1>
-            <p>     My name is Lucky. My fur is as white as this paragraph. 
+            <p>     My name is <span>Lucky</span>. My fur is as white as this paragraph. 
                     Welcome to my website station,
                     this is where my owner will post pictures of myself and my friends, 
                     aswell as caption them.
@@ -37,7 +37,6 @@ const Home = () => {
             <div>Boswell Orendain</div>
             <div>Project By boskyle</div>
         </footer>
-
         </>
 
 

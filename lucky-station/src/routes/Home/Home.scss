@@ -13,7 +13,7 @@ $color-primary: #f8f3d4;
 }
 
 
-//default styles
+//default styles (mobile first design)
 img {
     display: block;
     height: auto;
@@ -25,8 +25,20 @@ h1,h2,h3 {
 }
 
 #introduction .content-wrap {
-    padding: 0 2em;
+    padding: 1em 2em;
     // become grid at this custom defined breakpoint
+}
+
+
+.content-wrap:first-child {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    font-size: 1.4em;
+    color: white;
+}
+.content-wrap:first-child p > span {
+    color: red;
 }
 
 
@@ -37,7 +49,7 @@ h1,h2,h3 {
 }
 
 
-// breakpoint smaller screen
+// breakpoint smaller screen (700px width or more)
 @include medium-screen {
     .grid {
         display: grid;
@@ -45,11 +57,14 @@ h1,h2,h3 {
     }
     #introduction > .content-wrap {
         grid-column: 1/4;
-        font-size: 1.5em;
+        font-size: 1.6em;
         text-align: left;
+        justify-content: center;
+        margin-bottom: 10em;
+        
     }
     img {
-        padding: 1em;
+        padding: 5em;
     }
 }
 
