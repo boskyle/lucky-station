@@ -33,7 +33,7 @@ const Home = () => {
         
         </main>
 
-        <footer id="main-footer" class="grid">
+        <footer id="main-footer" className="grid">
             <div>Boswell Orendain</div>
             <div>Project By boskyle</div>
         </footer>

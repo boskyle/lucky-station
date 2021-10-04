@@ -8,11 +8,11 @@ function App() {
 
   <Router>
     <div className="App">
-      <div className="containerFluid bg-info">
+
       <Switch>
       <Route exact path='/'component={Home}></Route>
       </Switch>
-      </div>
+
     </div>
   </Router>
   );
