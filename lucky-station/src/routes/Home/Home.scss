@@ -7,7 +7,7 @@
 // breakpoints (scss style)
 
 @mixin medium-screen {
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 768px) {
         @content;
     }
 }
@@ -64,7 +64,7 @@ h1,h2,h3 {
         
     }
     img {
-        padding: 5em;
+        padding: 2em;
     }
 }
 

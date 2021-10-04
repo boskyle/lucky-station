@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.scss';
 import luckyImg from '../../assets/images/Home/lucky_no_bg.png';
 
+
 const Home = () => {
     return (
         // fragment
@@ -33,10 +34,10 @@ const Home = () => {
         
         </main>
 
-        <footer id="main-footer" className="grid">
+        {/* <footer id="main-footer" className="grid">
             <div>Boswell Orendain</div>
             <div>Project By boskyle</div>
-        </footer>
+        </footer> */}
         </>
 
 
