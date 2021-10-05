@@ -14,6 +14,7 @@
 
 
 //default styles (mobile first design)
+
 img {
     display: block;
     height: auto;
@@ -26,15 +27,13 @@ h1,h2,h3 {
 
 #introduction .content-wrap {
     padding: 1em 2em;
-    // become grid at this custom defined breakpoint
 }
-
 
 .content-wrap:first-child {
     display: flex;
     flex-flow: column wrap;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 2em;
     color: white;
 }
 .content-wrap:first-child p > span {
@@ -57,14 +56,17 @@ h1,h2,h3 {
     }
     #introduction > .content-wrap {
         grid-column: 1/4;
-        font-size: 1.6em;
+        font-size: 2em;
         text-align: left;
-        justify-content: center;
-        margin-bottom: 10em;
-        
+        justify-content: start;
+        margin-top: 20%;        
     }
-    img {
-        padding: 2em;
+    #lucky-img-one {
+        display: block;
+        height: auto;
+        width: 55%;
+        margin-top: 5em;
+        margin-left: 40%;
     }
 }
 

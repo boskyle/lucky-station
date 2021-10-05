@@ -1,0 +1,80 @@
+@mixin medium-screen {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+
+
+
+// mobile default properties
+
+#section-1-about > .content-wrap-about > p {
+    font-size:1.5em;
+    text-align: center;
+    padding: 1em;
+} 
+
+
+
+#section-1-about > .content-wrap-about {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#section-1-about > .content-wrap-about > span {
+    font-size: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+@include medium-screen {
+    .grid-about {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        padding: 3em 20%;
+    }
+    
+    .grid-about > div {
+        // border: 1px solid black;
+        margin-top: 0.5em;
+    }
+
+    .grid-about > .content-wrap-about {
+        flex-flow: row nowrap !important;
+        align-items: start;
+    }
+    .grid-about > .content-wrap-about:nth-child(odd) {
+        flex-flow: row-reverse nowrap !important;
+    }
+
+    .grid-about > .content-wrap-about:nth-child(odd) > p{
+        text-align: left !important;
+    }
+
+    .grid-about > .content-wrap-about:nth-child(even) > p{
+        text-align: right !important;
+    }
+
+
+    .grid-about > .content-wrap-about > p {
+        font-size: 1.75em !important;
+    }
+    .grid-about > .content-wrap-about > span {
+        font-size: 10em !important;
+    }
+
+
+
+
+}

@@ -15,10 +15,10 @@ const Home = () => {
                     aswell as caption them.
             </p>
             </div>
-            <img src={luckyImg}></img>
+            <img src={luckyImg} id="lucky-img-one"></img>
         </header>
         
-        <main id="main">
+        {/* <main id="main">
 
             <section id="section-a" className="grid">
                 <div className="content-wrap">
@@ -32,7 +32,7 @@ const Home = () => {
                 </div>
             </section>
         
-        </main>
+        </main> */}
 
         {/* <footer id="main-footer" className="grid">
             <div>Boswell Orendain</div>
