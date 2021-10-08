@@ -14,7 +14,9 @@
 
 
 //default styles (mobile first design)
-
+p {
+    color: whitesmoke;
+}
 img {
     display: block;
     height: auto;
@@ -37,8 +39,9 @@ h1,h2,h3 {
     color: white;
 }
 .content-wrap:first-child p > span {
-    color: red;
+    color: #F97671;
 }
+
 
 
  

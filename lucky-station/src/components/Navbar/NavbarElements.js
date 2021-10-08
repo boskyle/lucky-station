@@ -3,14 +3,15 @@ import {NavLink} from 'react-router-dom';
 
 
 export const Nav = styled.nav`
-    background:#FFDE7D;
+    background:#A2D2FF;
     height: 80px;
     // margin-top: -80px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     font-size: 1rem;
-    position sticky;
+    position: relative;
+    width: 100%;
     top: 0;
     z-index: 10;
 
@@ -68,7 +69,7 @@ export const NavMenu = styled.ul`
     
     display:flex;
     align-items:center;
-    justify-content: center;
+    justify-content: start;
     list-style: none;
     text-align: center;
     width: 100%;
@@ -88,16 +89,16 @@ export const NavLinks = styled(NavLink)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-top: 0.25em;
-    padding: 0em 4em;
+    margin: 0.25em 2em;
+    padding: 0em 0em;
     height: 100%;
     cursor: pointer;
     font-size: 1.5em;
     text-underline-offset: 7px;   
 
-    color: #F6416C;
+
+    color: #23049D;
     &:hover {
-        color: #F6416C;
         text-decoration: underline;
     }
 
