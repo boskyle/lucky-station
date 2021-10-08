@@ -1,0 +1,12 @@
+@mixin medium-screen {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@include medium-screen {
+    .grid-blog {
+        display: grid;
+        
+    }
+}
