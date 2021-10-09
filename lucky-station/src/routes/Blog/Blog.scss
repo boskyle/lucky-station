@@ -3,10 +3,52 @@
         @content;
     }
 }
+$card: 10px;
+
+
+.content-wrap-blog {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1em;
+    border-bottom: 1px solid black;
+    align-items: end;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.content-wrap-blog > * {
+    margin: 2px;
+}
+
+.content-wrap-blog p {
+    background-color: #468BD4;
+    border-radius: $card;
+}
+
+.content-wrap-blog small {
+    color: white;
+    display: inline;
+    font-size: 0.7em;
+    font-style: italic;
+    border-radius: $card;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
 
 @include medium-screen {
     .grid-blog {
-        display: grid;
-        
+        display: grid;     
+    }
+
+    .content-wrap-blog {
+        display: block;
+        text-align: left;
     }
 }
