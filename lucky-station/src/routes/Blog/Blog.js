@@ -1,14 +1,32 @@
 import React from 'react';
 import './Blog.scss';
-import luckyImg from '../../assets/images/Home/lucky_no_bg.png';
 
-const Blog = ({paragraph,date}) => {
+
+const Blog = ({paragraph,date,images}) => {
     return (
         <div className="content-wrap-blog">
+
+            <div className="blog-main-container">
             <small id="date-blog">{date}</small>
             <p id="main-content-blog">{paragraph}</p>
-            <div className="blog-images-container border d-flex flex-column align-items-center">
-            <img src={luckyImg} className="w-50"></img>
+            </div>
+        
+            <div className="blog-images-container">
+                <div>
+                <img src={images[0]}></img>
+                </div>
+                <div>
+                <img src={images[1]}></img>
+                </div>
+                <div>
+                <img src={images[1]}></img>
+                </div>
+                <div>
+                <img src={images[1]}></img>
+                </div>
+                <div>
+                <img src={images[1]}></img>
+                </div>
             </div>
 
         </div>
