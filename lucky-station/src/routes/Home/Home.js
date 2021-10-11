@@ -15,7 +15,7 @@ const Home = () => {
                     aswell as caption them.
             </p>
             </div>
-            <img src={luckyImg} id="lucky-img-one"></img>
+            <div id="lucky-img-one-container"><img src={luckyImg} id="lucky-img-one"></img></div>
         </header>
         
         {/* <main id="main">
@@ -34,10 +34,7 @@ const Home = () => {
         
         </main> */}
 
-        {/* <footer id="main-footer" className="grid">
-            <div>Boswell Orendain</div>
-            <div>Project By boskyle</div>
-        </footer> */}
+
         </>
 
 

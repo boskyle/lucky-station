@@ -10,11 +10,12 @@ $card: 10px;
     display: flex;
     flex-flow: column wrap;
     padding: 1em;
-    border-bottom: 10px solid black;
+    border-bottom: 5px solid #ff865e;
     align-items: end;
     text-align: center;
     font-size: 1.75em;
 }
+
 
 .content-wrap-blog > * {
     margin: 2px;

@@ -4,39 +4,47 @@
     }
 }
 
-$card: 16px;
+$card: 18px;
 
 
 
 
 // mobile default properties
 
-#section-1-about > .content-wrap-about {
-    margin-top:2em;
-}
 
-#section-1-about > .content-wrap-about > p {
-    font-size:1.5em;
+ .content-wrap-about > * {
+    font-size:2em;
     text-align: center;
     padding: 1em;
-    margin: 0em 1em;
+    margin: 0.5em 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius:$card;
+
 } 
 
 
 
-#section-1-about > .content-wrap-about {
+  .content-wrap-about {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+
 }
 
-#section-1-about > .content-wrap-about > span {
-    font-size: 5em;
-    padding: 0em 35px;
+.content-wrap-about > div {
+    font-size: 10em;
+    padding: 0em 25px;
     color: #FEF9EF;
     border-radius: $card;
-    background-color: #FF865E;
+    background-color:#468bd4;
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
+
+
+
 
 
 
@@ -51,34 +59,38 @@ $card: 16px;
 @include medium-screen {
     .grid-about {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: auto;
-        padding: 3em 20%;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows:auto;
+ 
+        // padding: 3em 10%;
     }
-    .grid-about > .content-wrap-about {
+.grid-about-item-one {
+        // border: 1px solid black;
+        grid-column: 1/7;
+        margin: 1em 3em;
+    }
+ .content-wrap-about {
         flex-flow: row nowrap !important;
-        align-items: start;
-        margin-top: 1.5% !important;
+        align-items: center;
     }
-    .grid-about > .content-wrap-about:nth-child(odd) {
+.content-wrap-about:nth-child(odd) {
         flex-flow: row-reverse nowrap !important;
     }
 
-    .grid-about > .content-wrap-about:nth-child(odd) > p{
+.content-wrap-about:nth-child(odd) > p{
         text-align: left !important;
     }
 
-    .grid-about > .content-wrap-about:nth-child(even) > p{
+ .content-wrap-about:nth-child(even) > p{
         text-align: right !important;
     }
 
 
-    .grid-about > .content-wrap-about > p {
-        font-size: 1.75em !important;
+ .content-wrap-about > p {
+        font-size: 2em !important;
     }
-    .grid-about > .content-wrap-about > span {
-        font-size: 10em !important;
-    }
+ 
+
 
 
 
