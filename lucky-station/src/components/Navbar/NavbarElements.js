@@ -13,7 +13,7 @@ export const Nav = styled.nav`
     position: sticky;
     width: 100%;
     top: 0;
-    z-index: 10;
+    z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     @media screen and (max-width: 768px) {
@@ -30,8 +30,6 @@ export const NavbarContainer = styled.div`
     width: 100%;
     max-width: 1100px;
 `
-
-
 // export const NavLogo = styled(NavLink)`
 //     color: #F6416C;
 //     justify-self: flex-start;

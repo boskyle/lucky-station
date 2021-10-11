@@ -1,12 +1,16 @@
 import React from 'react'
-
-const index = () => {
+import {Sidebarcontainer,Icon,CloseIcon} from './SidebarElements';
+const Sidebar = () => {
     return (
-        <div>
-            
-        </div>
+        <Sidebarcontainer>
+            <Icon>
+                <CloseIcon />
+            </Icon>
+        </Sidebarcontainer>
+
+
     )
 }
 
-export default index
+export default Sidebar;
 

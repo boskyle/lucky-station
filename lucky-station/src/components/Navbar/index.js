@@ -3,7 +3,7 @@ import {Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks} from '.
 import {FaBars} from 'react-icons/fa';
 const Navbar = () => {
     return (
-        <> 
+         
         
             <Nav>
                 <NavbarContainer>
@@ -25,7 +25,7 @@ const Navbar = () => {
                 </NavbarContainer>
             </Nav>  
         
-        </>
+        
         
     )
 }
