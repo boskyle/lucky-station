@@ -3,13 +3,13 @@ import {NavLink} from 'react-router-dom';
 
 
 export const Nav = styled.nav`
-    background:#A2D2FF;
+    background:#74e0c0;
     height: 80px;
     // margin-top: -80px;
     display: flex;
     justify-content: start;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.25rem;
     position: sticky;
     width: 100%;
     top: 0;
@@ -23,11 +23,11 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display:flex;
-    justify-content: space-between;
+    flex-flow: row no-wrap;
+    align-items: center;
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
     max-width: 1100px;
 `
 
@@ -88,7 +88,7 @@ export const NavLinks = styled(NavLink)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin: 0.25em 2em;
+    margin: 0.25em 1em;
     padding: 0em 0em;
     height: 100%;
     cursor: pointer;
@@ -98,11 +98,11 @@ export const NavLinks = styled(NavLink)`
 
     color: #23049D;
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
-
     &.active{
-        text-decoration: underline;
+        text-decoration: none;
+        color: red;
     } 
 
 `
