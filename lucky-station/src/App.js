@@ -11,7 +11,7 @@ function App() {
   return (
 
   <Router>
-    <div className="App" style={{position: 'relative'}}>
+    <div className="App">
       <Navbar/>
       <Sidebar/>
       <Switch>
