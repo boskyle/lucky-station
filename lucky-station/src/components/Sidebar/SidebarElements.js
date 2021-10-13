@@ -12,8 +12,8 @@ export const Sidebarcontainer = styled.aside `
     align-items: center;
     top: 0;
     left: 0;
-    //  opacity: ${({isOpen}) => (isOpen ? '100%':'0')};
-    //  top:${({isOpen}) => (isOpen ? '0':'-100%')};
+     opacity: ${({isOpen}) => (isOpen ? '100%':'0')};
+     top:${({isOpen}) => (isOpen ? '0':'-100%')};
      transition: 0.3s ease-in-out;
 `
 
@@ -62,9 +62,12 @@ export const SidebarLink  = styled(NavLink)`
     cursor: pointer;
 
         &:hover {
-            color: #01bf71;
+            color: #0056B3;
             transition: 0.2s ease-in-out;
             text-decoration: none;
+        }
+        &.active {
+            color: red;
         }
 `
 

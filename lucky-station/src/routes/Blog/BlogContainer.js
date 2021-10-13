@@ -13,11 +13,6 @@ const BlogContainer = () => {
             paragraph={'Me at Clayhill Park near where I live . My dad put me on the swing and at first I really enjoyed it but then we he started swinging me I started to get dizzy.'}   
             images={[luckyImg,luckyImg2]}
             />
-             <Blog 
-            date={'Saturday,August 7, 2021'}
-            paragraph={'Me at Clayhill Park near where I live . My dad put me on the swing and at first I really enjoyed it but then we he started swinging me I started to get dizzy.'}   
-            images={[luckyImg,luckyImg2]}
-            />
         </section>
     )
 }

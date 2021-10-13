@@ -5,12 +5,14 @@ import Home from './routes/Home/Home';
 import About from './routes/About/About';
 import Blog from './routes/Blog/BlogContainer';
 import './App.scss';
+import {NavbarProvider} from './components/Navbar/NavbarContext';
 
 
 function App() {
   return (
 
   <Router>
+    <NavbarProvider>
     <div className="App">
       <Navbar/>
       <Sidebar/>
@@ -20,6 +22,7 @@ function App() {
       <Route path="/blog" component={Blog}></Route>
       </Switch>
     </div>
+    </NavbarProvider>
   </Router>
   );
 }

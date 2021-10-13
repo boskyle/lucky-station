@@ -18,15 +18,6 @@ const Blog = ({paragraph,date,images}) => {
                 <div>
                 <img src={images[1]}></img>
                 </div>
-                <div>
-                <img src={images[1]}></img>
-                </div>
-                <div>
-                <img src={images[1]}></img>
-                </div>
-                <div>
-                <img src={images[1]}></img>
-                </div>
             </div>
 
         </div>

@@ -97,10 +97,12 @@ export const NavLinks = styled(NavLink)`
     color: #23049D;
     &:hover {
         text-decoration: none;
+        transition: 0.2s ease-in-out;
     }
     &.active{
         text-decoration: none;
         color: red;
+        transition: 0.2s ease-in-out;
     } 
 
 `
