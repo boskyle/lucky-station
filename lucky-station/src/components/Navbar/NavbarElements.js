@@ -90,7 +90,7 @@ export const NavLinks = styled(NavLink)`
     padding: 0em 0em;
     height: 100%;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-underline-offset: 7px;   
 
 
@@ -101,7 +101,7 @@ export const NavLinks = styled(NavLink)`
     }
     &.active{
         text-decoration: none;
-        color: red;
+        color: #f97671;
         transition: 0.2s ease-in-out;
     } 
 
